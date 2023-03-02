@@ -1,0 +1,34 @@
+{
+  "name": "eva",
+  "version": "1.0.0",
+  "description": "EVA",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "make": "electron-forge make",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "build": "electron-builder build"
+  },
+  "config": {
+    "forge": {
+      "packagerConfig": {},
+      "makers": [
+        {
+          "name": "@electron-forge/my-electron-app"
+        }
+      ]
+    }
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^23.1.1",
+    "electron-builder": "^23.6.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "electron-reload": "^2.0.0-alpha.1",
+    "openai": "^3.1.0"
+  }
+}

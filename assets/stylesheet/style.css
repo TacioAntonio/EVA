@@ -1,0 +1,99 @@
+:root {
+    --background-body: #0d1325;
+    --background-historic: rgba(15, 22, 40, .5);
+    --background-input: rgba(71, 86, 104, .5);
+    --background-btn-cancel: rgb(51 65 85/1);
+    --border-color: #475668;
+    --text-color-btn-cancel: #8a9aac;
+    --text-color: white;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+html, body {
+    padding: 12px;
+    font-size: 1rem;
+    background-color: var(--background-body);
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.historic__wrapper {
+    position: relative;
+}
+
+.historic {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    height: 85vh;
+    background-color: var(--background-historic);
+    border-radius: 8px;
+    padding: 12px;
+    overflow-y: scroll;
+    border: 1px solid var(--border-color);
+    margin-bottom: 12px;
+}
+
+.question {
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.response {
+    font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+}
+
+.input__wrapper {
+    position: relative;
+    margin-top: 6px;
+}
+
+.input__message {
+    width: 93vw;
+    padding: 6px;
+    color: var(--text-color);
+    background-color: var(--background-input);
+    border: 0 solid var(--border-color);
+    border-radius: 6px;
+}
+
+.btn__cancel__speak {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    color: var(--text-color-btn-cancel);
+    background-color: var(--background-btn-cancel);
+    border-color: transparent;
+    border-radius: 12px;
+    padding: 6px;
+    opacity: .9;
+    cursor: pointer;
+}
+
+.btn__send {
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    background-image: url(../images/send.png);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    border: none;
+    opacity: .8;
+    cursor: pointer;
+}
+
+
+.btn__send:hover,
+.btn__send:focus,
+.btn__cancel__speak:hover,
+.btn__cancel__speakfocus {
+    opacity: 1;
+}
