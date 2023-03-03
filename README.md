@@ -2,7 +2,7 @@
 
 ![Eva](./img/openai.gif)
 
-> A desktop application built using electron, openai and speechSynthesis
+> A desktop application built using electron, openai, unsplash and speechSynthesis
 
 # Generate image
 
